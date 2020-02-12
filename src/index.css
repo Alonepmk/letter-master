@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: "JandaRomantic";
+  src: url(JandaRomantic.ttf);
+  font-weight: normal;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.home {
+  height: 100vh;
+  width: 100vw;
+  color: #444;
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.home > div {
+  flex: 1;
+}
+
+.home .letter {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.letter > p {
+  flex: 1;
+  box-shadow: 1px 1px 5px 0px #0004;
+  /* background-image: url(letter-background.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-color: #fff1;
+  backdrop-filter: blur(2px);
+  background-blend-mode: screen;
+  padding: 60px 40px;
+  overflow: hidden;
+  color: #223d2d;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: JandaRomantic;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: auto;
+}
+
+.card {
+  box-shadow: 1px 1px 5px 0px #0002;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #fff1;
+  backdrop-filter: blur(1px);
+}
+
+.card img {
+  flex: 1;
+  object-fit: cover;
+}
+
+.card .text {
+  padding: 10px;
+  color: #eee;
+}
